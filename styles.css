@@ -925,6 +925,7 @@ h3 {
   width: min(100%, 330px);
   display: grid;
   align-content: center;
+  justify-items: center;
   gap: 12px;
   padding: 22px;
 }
@@ -932,7 +933,7 @@ h3 {
 .store-button {
   display: inline-flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   width: max-content;
   max-width: 100%;
   border-radius: 8px;
@@ -952,6 +953,7 @@ h3 {
 .store-column p {
   margin: 4px 0 0;
   font-size: 0.82rem;
+  text-align: center;
 }
 
 .site-footer {
@@ -1067,7 +1069,7 @@ h3 {
     align-content: start;
     grid-template-columns: repeat(2, max-content);
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     column-gap: 16px;
   }
 
@@ -1253,7 +1255,7 @@ h3 {
 
   .store-column {
     grid-template-columns: 1fr;
-    justify-items: start;
+    justify-items: center;
     padding: 18px;
   }
 
