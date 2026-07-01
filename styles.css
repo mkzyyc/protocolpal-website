@@ -84,6 +84,17 @@ p {
   font-weight: 950;
 }
 
+.footer-brand > span {
+  display: grid;
+  gap: 1px;
+}
+
+.footer-brand small {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
 .brand > span {
   display: grid;
   gap: 1px;
@@ -957,13 +968,33 @@ h3 {
 }
 
 .site-footer {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 24px;
   padding: 28px 0 44px;
   border-top: 1px solid rgba(148, 163, 184, 0.14);
 }
 
 .site-footer nav {
+  display: grid;
+  justify-items: end;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: flex-end;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.footer-email {
+  color: var(--text);
+  font-size: 0.86rem;
+  overflow-wrap: anywhere;
 }
 
 .legal-page {
@@ -1120,6 +1151,31 @@ h3 {
     border: 1px solid rgba(148, 163, 184, 0.14);
     border-radius: 8px;
     background: rgba(5, 8, 23, 0.32);
+  }
+
+  .site-footer {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 18px;
+    padding-bottom: 34px;
+  }
+
+  .site-footer nav {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    width: 100%;
+  }
+
+  .site-footer .footer-email {
+    justify-content: flex-start;
+    width: 100%;
+    text-align: left;
   }
 
   .hero {
